@@ -1,0 +1,8 @@
+cs50
+Flask
+Flask-Session
+Flask-Mail
+gunicorn
+psycopg2
+requests
+datetime

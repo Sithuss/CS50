@@ -1,0 +1,12 @@
+sort1 uses: bubble sort
+
+How do you know?: For bubble sort, in the best case scenario (sorted list) the omega notation is omega of n,
+which means smaller than big O of n.
+
+sort2 uses: merge sort
+
+How do you know?:In sorting random texts, the big O runtime is n log(n), which is much faster than bubble sort and selection sort.
+
+sort3 uses: selection sort
+
+How do you know?: In selection sort both runtimes big O of n and omega of n are quite similar(n square).
