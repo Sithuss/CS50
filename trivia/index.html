@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <div>
+                    <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                </div>
+                <div id="Myid"></div>
+                <div>
+                    <button id="btn1">6 people per 1 sheep</button>
+                    <button id="btn2">3 people per 1 sheep</button>
+                    <button id="btn3">1 person per 1 sheep</button>
+                    <button id="btn4">1 person per 3 sheep</button>
+                    <button id="btn5">1 person per 6 sheep</button>
+
+                    <script>
+                        let b = document.querySelector('#btn5');
+                        document.querySelector('#btn5').addEventListener('click', function()
+                        {
+                            document.querySelector('#btn1').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn2').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn3').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn4').style.backgroundColor = '#d9edff';
+                            b.style.backgroundColor = 'green';
+                            Myid.innerHTML = "Correct";
+                        });
+
+                        document.querySelector('#btn1').addEventListener('click', function()
+                        {
+                            document.querySelector('#btn2').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn3').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn4').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn5').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn1').style.backgroundColor = 'red';
+                            Myid.innerHTML = "Incorrect";
+                        });
+
+                        document.querySelector('#btn2').addEventListener('click', function()
+                        {
+                            document.querySelector('#btn1').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn3').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn4').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn5').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn2').style.backgroundColor = 'red';
+                            Myid.innerHTML = "Incorrect";
+                        });
+
+                        document.querySelector('#btn3').addEventListener('click', function()
+                        {
+                            document.querySelector('#btn1').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn2').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn4').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn5').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn3').style.backgroundColor = 'red';
+                            Myid.innerHTML = "Incorrect";
+                        });
+                        document.querySelector('#btn4').addEventListener('click', function()
+                        {
+                            document.querySelector('#btn1').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn2').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn3').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn5').style.backgroundColor = '#d9edff';
+                            document.querySelector('#btn4').style.backgroundColor = 'red';
+                            Myid.innerHTML = "Incorrect";
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <div id="ans"></div>
+                <div>
+                    <input autocomplete="off" type="text">
+                    <button id="butt" type="button">Check Answer</button>
+                    <script>
+                        document.querySelector('#butt').addEventListener('click', function() {
+                            let anschk = document.querySelector('input').value;
+                            if (anschk.toLowerCase() == "switzerland")
+                            {
+                                document.querySelector('input').style.backgroundColor = "green";
+                                ans.innerHTML = 'Correct';
+                            }
+                            else
+                            {
+                                document.querySelector('input').style.backgroundColor = "red";
+                                ans.innerHTML = "Incorrect";
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
