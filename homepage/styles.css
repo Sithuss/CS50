@@ -1,0 +1,88 @@
+
+.contain
+{
+    text-align: center;
+    color:aquamarine;
+}
+html,body
+{
+    background-image: url(re01.jpg);
+}
+.center
+{
+    text-align:center;
+    font-size:30px;
+
+}
+a[href*="my_favorite_games"]
+{
+    color:aquamarine;
+}
+a[href*="my_favorite_dramas"]
+{
+    color:lime;
+}
+a[href*="my_favorite_news_site"]
+{
+    color:blanchedalmond;
+}
+a{
+    text-decoration:none;
+}
+a[href*="theguardian.com"]
+{
+    color:cyan;
+    text-decoration:none;
+}
+a:hover
+{
+
+    text-decoration: underline;
+    color:rgb(45, 199, 160);
+}
+footer
+{
+    color:azure;
+    margin-top:13rem;
+    display:flex;
+}
+#lists
+{
+    padding:2rem;
+    border:2rem;
+    opacity:0.8;
+}
+
+.item
+{
+    position: relative;
+    display:block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius:0.25rem;
+    background-color:rgba(157, 197, 219, 0.719);
+}
+
+#horizon div
+{
+    display:inline-block;
+
+}
+.dawn
+{
+    color:cadetblue;
+    margin-top: 15rem;
+}
+.space
+{
+    margin-left: 200px;
+}
+.contain_1
+{
+    text-align:center;
+    border:7px;
+    padding:5px;
+    font-size:20px;
+    background-color:rgb(184, 138, 83, 0.6);
+    color:aquamarine;
+}
